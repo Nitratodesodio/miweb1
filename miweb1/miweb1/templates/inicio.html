@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Ñuñoa Recicla</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <header>
+     
+      <nav>
+        <ul>
+        
+          <div class="container">
+          <li><a href="#">Home</a></li> 
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Rankings</a></li>
+          <li><button class="btn">Iniciar Sesión</button></li>
+  
+ 
+        </ul>
+      </div>
+
+      <div class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="Ñuñoa Recicla">
+        <h1>Ñuñoa Recicla</h1>
+      </div>
+      
+
+      </nav>
+    </header>
+    
+    <section>
+      
+      <div class="columnas">
+        <p> ¡Recicla! Por tu futuro y por un mundo + sustentable
+          <br>
+          <button class="btn">Solicitud de retiro a domicilio</button>
+          <button class="btn">Solicitud de retiro a comunidad</button></p>
+        <p>  <img src="{% static 'img/reciclar.jpg' %}" alt="Ñuñoa Recicla"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2023 Ñuñoa Recicla. Todos los derechos reservados.</p>
+    </footer>
+
+  </body>
+</html>
+
