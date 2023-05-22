@@ -20,4 +20,5 @@ from . import views
 
 urlpatterns = [
       path('', views.inicio, name='inicio'),
+     path('somos.html', views.somos, name='somos'),
 ]

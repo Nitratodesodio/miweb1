@@ -1,38 +1,7 @@
+
+{% extends "base.html" %} {% block titulo %} HOla {% endblock %} {% block body %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
 
-    <title>Ñuñoa Recicla</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-  </head>
-  <body>
-    <header>
-     
-      <nav>
-        <ul>
-        
-          <div class="container">
-          <li><a href="#">Home</a></li> 
-          <li><a href="#">Quiénes somos</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Rankings</a></li>
-          <li><button class="btn">Iniciar Sesión</button></li>
-  
- 
-        </ul>
-      </div>
-
-      <div class="logo">
-        <img src="{% static 'img/logo.png' %}" alt="Ñuñoa Recicla">
-        <h1>Ñuñoa Recicla</h1>
-      </div>
-      
-
-      </nav>
-    </header>
-    
     <section>
       
       <div class="columnas">
@@ -44,10 +13,50 @@
       </div>
     </section>
 
+    <section>
+      <div class="container">
+          <div class="column">
+              <p>Texto de la columna 1</p>
+          </div>
+          <div class="column">
+              <p>Texto de la columna 2</p>
+          </div>
+          <div class="column">
+              <p>Texto de la columna 3</p>
+          </div>
+      </div>
+  </section>
+  <section>
+    <h1>¡Ofrecemos nuestro servicio de retiro gratis! </h1>
+  </section>
+  <section>
+    <div class="container2">
+      <div class="column2">
+        <p>  <img src="{% static 'img/camion.png' %}" alt="Ñuñoa Recicla"></p>
+      </div>
+      <div class="column2">
+        <p>  <img src="{% static 'img/equipo.png' %}" alt="Ñuñoa Recicla"></p>
+      </div>
+  </div>
+
+  </section>
+  <section>
+    <div>
+    
+   <h1>
+    ¡Contactanos aqui!
+    
+   </h1>
+  </div>
+   <div>
+ 
+   <button class="btn">Cotizar</button>
+  </div>
+  </section>
+  
     <footer>
       <p>© 2023 Ñuñoa Recicla. Todos los derechos reservados.</p>
     </footer>
 
-  </body>
-</html>
+    {% endblock %}
 

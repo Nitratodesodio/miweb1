@@ -14,7 +14,7 @@ header {
     width: 100%;
   }
   
-  .container {
+  .container1 {
     display: flex;
     justify-content: space-between;
   }
@@ -97,5 +97,43 @@ header {
     width: 400px; /* ajusta el tamaño según tus necesidades */
     height: auto; /* para mantener la proporción de la imagen */
   }
+
+ .column {
+  display: inline-block;
+  width: 20.33%;
+  padding: 10px;
+  box-sizing: border-box;
+ }
+
+.container2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.column2 {
+  display: inline-block;
+  width: 40.33%;
+  border: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+
+ }
+
+ .content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+.text {
+  flex-grow: 1;
+}
+
 
   

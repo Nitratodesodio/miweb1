@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <header>
+       
+
+        <nav>
+          <ul>
+          
+            <div class="container1">
+            <li><a href="#">Home</a></li> 
+            <li><a href="somos.html">Quiénes somos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Rankings</a></li>
+            <li><button class="btn">Iniciar Sesión</button></li>
+    
+   
+          </ul>
+        </div>
+  
+        <div class="logo">
+          <img src="{% static 'img/logo.png' %}" alt="Ñuñoa Recicla">
+          <h1>Ñuñoa Recicla</h1>
+        </div>
+        
+  
+        </nav>
+      </header>
+    
+    <div>
+        {% block body %}
+        {% endblock %}
+      </div>
+    <footer>
+        <p>Derechos de autor &copy; Año - Nombre de tu organización.</p>
+    </footer>
+</body>
+</html>
