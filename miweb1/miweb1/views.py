@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+#AGREGANDO UN COMENTARIO PARA GITHUB
+
 def inicio(request):
     context = {}
     return render(request, 'inicio.html', context)
