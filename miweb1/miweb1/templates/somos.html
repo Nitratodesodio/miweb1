@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Quiénes somos{% endblock %}
+
+{% block body %}
+    <section>
+        <h1>Quiénes somos</h1>
+        <div class="content">
+           
+            <p>  <img src="{% static 'img/reciclar.jpg' %}" alt="Ñuñoa Recicla"></p>
+          
+            <div class="text">
+                <p>Aquí puedes agregar el contenido del primer párrafo de "Quiénes somos".</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Qué hacemos</h2>
+        <div class="content reverse">
+           
+         
+            <div class="column2">
+
+                <p>  <img src="{% static 'img/reciclar.jpg' %}" alt="Ñuñoa Recicla"></p>
+         </div>
+         <div class="text">
+            <p>Aquí puedes agregar el contenido del primer párrafo de "Qué hacemos".</p>
+        </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Cuál es nuestra meta</h2>
+        <div class="content">
+         <div class="column2">
+
+            <p>  <img src="{% static 'img/reciclar.jpg' %}" alt="Ñuñoa Recicla"></p>
+         </div>
+            <div class="text">
+                <p>Aquí puedes agregar el contenido del primer párrafo de "Cuál es nuestra meta".</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

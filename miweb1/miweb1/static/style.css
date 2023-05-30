@@ -1,0 +1,170 @@
+/* Estilos para el header */
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #ffffff;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo > img {
+    margin-top: 0px;
+    width: 35px; /* ajusta el tamaño según tus necesidades */
+    height: auto; /* para mantener la proporción de la imagen */
+  }
+  
+  .btn {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 55px;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-left: 12px;
+  }
+  
+  a {
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin-top: 0px;
+    color: #000000;
+    font-size: 25px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: cursive;
+  }
+
+  section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  section > h1 {
+    margin-top: 25px;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 40px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .columnas {
+    font-family: cursive;
+    font-size: 35px;
+    columns: 2;
+    column-gap: 20px;
+  }
+
+  img{
+    margin-top: 0px;
+    width: 400px; /* ajusta el tamaño según tus necesidades */
+    height: auto; /* para mantener la proporción de la imagen */
+  }
+
+ .column {
+  display: inline-block;
+  width: 20.33%;
+  padding: 10px;
+  box-sizing: border-box;
+ }
+
+.container2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.column2 {
+  display: inline-block;
+  width: 40.33%;
+  border: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+
+ }
+
+ .content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+.text {
+  flex-grow: 1;
+}
+
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.table-container {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
