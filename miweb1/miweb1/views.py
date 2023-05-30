@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 #AGREGANDO UN COMENTARIO PARA GITHUB
-
+#AGREAGNDO UN COMENTARIO PARTE 2
 def inicio(request):
     context = {}
     return render(request, 'inicio.html', context)
