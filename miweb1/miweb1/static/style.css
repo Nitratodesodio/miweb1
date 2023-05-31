@@ -112,9 +112,12 @@ header {
       font-family: 'Oswald', sans-serif;
     }
 
-  .containerpuntaje h2{
-    margin-top: 150px;
-  
+  .puntaje h2{
+
+    
+    font-size: 20px;
+    margin: 25px;
+    margin-top: 100px;
     font-family: 'Oswald', sans-serif;
     }
 
@@ -141,7 +144,7 @@ header {
 
  .column {
   display: inline-block;
-  width: 20.33%;
+  width: 30%;
   padding: 10px;
   box-sizing: border-box;
  }
@@ -211,3 +214,80 @@ th {
 .h1title {
   font-family: Verdana, Geneva, sans-serif;
 }
+
+.contentfunciona h1{
+font-size: 30px;
+}
+
+.contentfunciona h2{
+
+}
+
+.contentfunciona img{
+  width: 200px; 
+  height: auto; 
+}
+.funciona{
+  columns: 2;
+}
+
+.funciona p{
+  margin-top: 100px;
+
+}
+
+.funciona2 img{
+  width: 500px; 
+  height: auto; 
+}
+.funciona2 p{
+ margin-top: 50px;
+
+}
+.funciona2 {
+  columns: 2;
+  margin-top: 50px;
+}
+.table-container{
+ 
+  vertical-align: middle;
+
+}
+.table-container img{
+ 
+    width: 50px; 
+    height: auto; 
+ 
+}
+
+.usernot h1{
+
+  margin-top: 100px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.form-container {
+  flex: 1;
+  columns: 2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.image-container {
+  flex: 1;
+  background-image: url("img/fondosustentable.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.form-container img{
+  width: 300px; 
+}
+

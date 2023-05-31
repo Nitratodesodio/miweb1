@@ -11,6 +11,34 @@
         <table>
             <thead>
                 <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Total de puntos</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for campo in ranking %}
+                    {% if forloop.first %}
+                        <tr>
+                            <td><img src="{% static 'img/ranking.png' %}" alt="Imagen del primer usuario"></td>
+                            <td>{{ campo.nombre }}</td>
+                            <td>{{ campo.total_puntos }}</td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td></td>
+                            <td>{{ campo.nombre }}</td>
+                            <td>{{ campo.total_puntos }}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    
+    
+        {% comment %} <table>
+            <thead>
+                <tr>
                     <th>Nombre</th>
                     <th>Kilos Reciclados</th>
                     <th>Puntaje</th>
@@ -43,7 +71,7 @@
                     <td>700</td>
                 </tr>
             </tbody>
-        </table>
+        </table> {% endcomment %}
     </div>
 </section>
 

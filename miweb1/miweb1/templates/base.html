@@ -15,7 +15,7 @@
             <div class="container1">
             <li><a href="inicio.html">Home</a></li> 
             <li><a href="somos.html">Quiénes somos</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="servicios.html">Como funciona</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="ranking.html">Rankings</a></li>
             <li><button onclick="window.modal1.showModal();" class="btn">Iniciar Sesión</button></li> 
@@ -32,7 +32,9 @@
   
         </nav>
       </header>
+      <form action="login" method="post">{% csrf_token %}
       <div class="modal-container">
+       
         <dialog id="modal1">
           <label for="usuario">Usuario:</label><br>
           <input type="text" id="usuario" name="usuario" required><br><br>
@@ -44,7 +46,9 @@
       
           <button class="btn" onclick="window.modal1.close();">Cerrar</button>
         </dialog>
+    
       </div>
+    </form>
     <div>
         {% block body %}
         {% endblock %}
