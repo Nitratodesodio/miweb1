@@ -17,4 +17,5 @@ def contacto(request):
 
 def ranking(request):
     return render(request,"ranking.html")
-
+def login(request):
+    return render(request,"login.html")

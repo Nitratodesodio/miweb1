@@ -25,5 +25,6 @@ urlpatterns = [
      path('contacto.html', views.contacto, name='contacto'),
      path('ranking.html', views.ranking, name='ranking'),
      path('servicios.html', views.servicios, name='servicios'),
+      path('login.html', views.login, name='login'),
         
 ]
