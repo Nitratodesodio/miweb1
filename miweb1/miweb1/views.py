@@ -37,9 +37,7 @@ def login(request):
             usuario_obj = Usuarios.objects.get(usuario=usuario, contrasena=contrasena)
             return render(request, 'login_success.html', {'usuario': usuario_obj})
         except Usuarios.DoesNotExist:
-
             return render(request, 'login.html')
-
     return render(request, 'login.html')
 
 def login_success(request, usuario_id):
