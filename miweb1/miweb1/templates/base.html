@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
@@ -18,7 +19,15 @@
             <li><a href="servicios.html">Como funciona</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="ranking.html">Rankings</a></li>
+            
+            {% if usuario  !=  None %}
+            <form action="sesion" method="post">{% csrf_token %}
+            <li><button type="submit" class="btn">Cerrar Sesión</button></li> 
+            </form>
+            {% elif usuario == None %}
             <li><button onclick="window.modal1.showModal();" class="btn">Iniciar Sesión</button></li> 
+            {% endif %}
+            
          
            
           </ul>

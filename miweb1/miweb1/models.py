@@ -21,7 +21,6 @@ class Residuos(models.Model):
         return self.idr
     
 class Registroresiduos(models.Model):
-    idrr= models.CharField(max_length= 13)
     idr = models.ForeignKey(Residuos, on_delete=models.CASCADE,default='DEFAULT VALUE')
     usuario = models.ForeignKey(Usuarios, on_delete=models.CASCADE,default='DEFAULT VALUE')
     kilos= models.CharField(max_length= 13)
@@ -31,4 +30,4 @@ class Registroresiduos(models.Model):
     
 
     def __str__(self):
-        return self.idrr
+        return self.idr_id

@@ -24,7 +24,24 @@ header {
     width: 35px; 
     height: auto;
   }
-  
+  .btncerrar{
+    background-color: #9e3636;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+  }
+  .btn:hover {
+    background-color: #9e7136;
+  }
+
   .btn {
     background-color: #9e3636;
     border: none;
@@ -216,7 +233,20 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  
 }
+#modal1 {
+  width: 300px;
+  padding: 20px;
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 .h1title {
   font-family: Verdana, Geneva, sans-serif;
@@ -295,6 +325,6 @@ font-size: 30px;
   background-position: center;
 }
 .form-container img{
-  width: 300px; 
+  width: 150px; 
 }
 
