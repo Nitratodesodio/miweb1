@@ -5,7 +5,6 @@
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-
     <title>{% block title %} {% endblock %}</title>
 </head>
 <body>
@@ -23,6 +22,7 @@
             {% if usuario  !=  None %}
             <form action="sesion" method="post">{% csrf_token %}
             <li><button type="submit" class="btn">Cerrar Sesión</button></li> 
+            <li><a href="login_success.html">Añadir reciclaje</a></li>
             </form>
             {% elif usuario == None %}
             <li><button onclick="window.modal1.showModal();" class="btn">Iniciar Sesión</button></li> 
