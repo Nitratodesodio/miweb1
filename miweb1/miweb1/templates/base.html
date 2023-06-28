@@ -18,47 +18,38 @@
             <li><a href="servicios.html">Como funciona</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="ranking.html">Rankings</a></li>
-            
             {% if usuario  !=  None %}
             <form action="sesion" method="post">{% csrf_token %}
             <li><button type="submit" class="btn">Cerrar Sesión</button></li> 
-            <li><a href="login_success.html">Añadir reciclaje</a></li>
+            <li><a href="{% url 'login_success' %}">Añadir reciclaje</a></li>
             </form>
             {% elif usuario == None %}
             <li><button onclick="window.modal1.showModal();" class="btn">Iniciar Sesión</button></li> 
             {% endif %}
-            
-         
-           
+          </div>
           </ul>
-        </div>
+        
         
         <div class="logo">
           <img src="{% static 'img/logo2.png' %}" alt="Ñuñoa Recicla">
           <h1 class="h1title">Comunidad Villa Cruz Gana</h1>
         </div>
-        
-  
         </nav>
       </header>
       <form action="login" method="post">{% csrf_token %}
       <div class="modal-container">
-       
         <dialog id="modal1">
           <label for="usuario">Usuario:</label><br>
           <input type="text" id="usuario" name="usuario" required><br><br>
-      
           <label for="contrasena">Contraseña:</label><br>
           <input type="password" id="contrasena" name="contrasena" required><br><br>
-      
+          <h6>¿No tienes cuenta? Registrate aca! </h6><a href="{% url 'registrarse' %}">Aqui</a>
           <input class="btn" type="submit" value="Iniciar sesión">
-      
           <button class="btn" onclick="window.modal1.close();">Cerrar</button>
         </dialog>
-    
       </div>
     </form>
-    <div>
+    <div class="formulario-registro">
         {% block body %}
         {% endblock %}
       </div>

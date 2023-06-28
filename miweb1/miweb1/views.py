@@ -51,8 +51,8 @@ def login(request): #Ventana de Login
             return render(request, 'login.html')
     return render(request, 'login.html')
 
-def login_success(request, usuario_nombre): #Metodo para iniciar sesion
-    usuario = Usuarios.objects.get(rut=usuario_nombre)
+def login_success(request): #Metodo para iniciar sesion
+    usuario= request.session['user'] 
     return render(request, 'login_success.html', {'usuario': usuario})
 
 def ingresar_residuos(request): #Pagina Ingresar residuos (Solo puede hacerlo el usuario o admnin)
@@ -60,13 +60,21 @@ def ingresar_residuos(request): #Pagina Ingresar residuos (Solo puede hacerlo el
     kilos=int(request.POST['kilos'])
     puntaje_material=Residuos.objects.get(nombre=material)
     user = request.session['user']
+    usersesion=Usuarios.objects.get(usuario=user)
+    
+    
    
     puntaje=int(puntaje_material.puntaje)
     puntos=puntaje*kilos
-    r = Registroresiduos.objects.create(idr_id=puntaje_material,kilos=kilos,fecha="16-04-2023",puntosobtenidos=puntos,usuario_id='15.232.323-7')
+    r = Registroresiduos.objects.create(idr_id=puntaje_material,kilos=kilos,fecha="16-04-2023",puntosobtenidos=puntos,usuario_id=usersesion.rut)
     return redirect('/ranking.html')
 
 def sesion(request): #Metodo para cerrar sesion
     request.session['user']=None
     user = request.session['user']
     return render(request, 'inicio.html', {'user': None})
+
+def registrarse(request): #Metodo para cerrar sesion
+    user = None
+    user = request.session['user']
+    return render(request,"registrarse.html",{'usuario': user})

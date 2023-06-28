@@ -89,20 +89,13 @@ header {
     font-family: Verdana, Geneva, sans-serif;
   }
 
-  section {
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-   
-  }
+
+
   
-  section > h1 {
-    margin-top: 25px;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
   
+  #contenedorR {
+    margin-top: 100px;
+  }
   p {
     margin: 40px;
     line-height: 1.5;
@@ -121,6 +114,7 @@ header {
     column-gap: 20px;
     height: 400px;
   }
+ 
 
   img{
     width: 600px; 
@@ -166,6 +160,7 @@ header {
  
    }
 
+
  .column {
   display: inline-block;
   width: 30%;
@@ -203,6 +198,9 @@ header {
   display: block;
   margin-bottom: 10px;
 }
+.formre label{
+  margin-bottom: 20px;
+}
 
 .table-container {
   margin: 0 auto;
@@ -212,6 +210,10 @@ header {
   border-radius: 5px;
   padding: 10px;
 }
+.formulario-registro{
+ margin-top: 100px;
+}
+
 
 table {
   width: 100%;
@@ -306,6 +308,7 @@ font-size: 30px;
   display: flex;
   width: 100%;
 }
+
 
 .form-container {
   flex: 1;

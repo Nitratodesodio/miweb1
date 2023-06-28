@@ -26,9 +26,10 @@ urlpatterns = [
      path('ranking.html', views.ranking, name='ranking'),
      path('servicios.html', views.servicios, name='servicios'),
      path('login', views.login, name='login'),
-     path('login_success/<str:usuario_id>/', views.login_success, name='login_success'),
+     path('login_success', views.login_success, name='login_success'),
      path('ingresar_residuos', views.ingresar_residuos, name='ingresar_residuos'),
      path('sesion', views.sesion, name='sesion'),
+     path('registrarse', views.registrarse, name='registrarse'),
 
         
 ]
