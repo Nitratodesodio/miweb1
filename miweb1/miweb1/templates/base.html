@@ -28,8 +28,6 @@
             {% endif %}
           </div>
           </ul>
-        
-        
         <div class="logo">
           <img src="{% static 'img/logo2.png' %}" alt="Ñuñoa Recicla">
           <h1 class="h1title">Comunidad Villa Cruz Gana</h1>
@@ -43,7 +41,7 @@
           <input type="text" id="usuario" name="usuario" required><br><br>
           <label for="contrasena">Contraseña:</label><br>
           <input type="password" id="contrasena" name="contrasena" required><br><br>
-          <h6>¿No tienes cuenta? Registrate aca! </h6><a href="{% url 'registrarse' %}">Aqui</a>
+          <h6>¿No tienes cuenta? Registrate aca! <a href="{% url 'registrarse' %}">Aqui</a></h6>
           <input class="btn" type="submit" value="Iniciar sesión">
           <button class="btn" onclick="window.modal1.close();">Cerrar</button>
         </dialog>

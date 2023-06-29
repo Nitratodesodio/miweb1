@@ -30,6 +30,7 @@ urlpatterns = [
      path('ingresar_residuos', views.ingresar_residuos, name='ingresar_residuos'),
      path('sesion', views.sesion, name='sesion'),
      path('registrarse', views.registrarse, name='registrarse'),
+     path('registro', views.registro, name='registro'),
 
         
 ]

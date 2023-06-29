@@ -4,9 +4,10 @@
 
 {% block body %}
 
-
-    <div class="formulario-registro">
-        <form action="/registro" method="post">
+<div class="content4">
+<div class="form-group">
+  <h1>Registrarse</h1>
+        <form action="registro" method="post">{% csrf_token %}
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required><br>
         
@@ -25,7 +26,7 @@
           <input type="submit" value="Registrarse">
         </form>
       </div>
-      
+    </div>
 
 
 {% endblock %}
