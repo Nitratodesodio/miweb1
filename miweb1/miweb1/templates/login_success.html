@@ -8,14 +8,22 @@
 
 <div class="usernot">
 <h1>Bienvenido {{ usuario.nombre }}</h1>
+
 </div>
-<h1>Añadir reciclaje</h1>
+<h1 class="h1reci">Añadir reciclaje</h1>
 <p></p>
 <div class="form-container">
    
         <div class="form-group">
             <label for="material">Material:</label>
-            <input type="text" id="material" name="material" required>
+            <select name="material">
+                <option value="Vidrio">Vidrio</option>
+                <option value="Plastico">Plastico</option>
+                <option value="Papel">Papel</option>
+                <option value="Metal">Metal</option>
+                <option value="Tetra pak">Tetra pak</option>
+              </select>
+              
         </div>
         <div class="form-group">
             <label for="kilos">Kilos:</label>
@@ -23,7 +31,7 @@
             <input type="submit" value="Enviar">
         </div>
         
-        <img src="{% static 'img/logo2.png' %}" alt="Ñuñoa Recicla">
+        <img src="{% static 'img/Puntuacion.png' %}" alt="Ñuñoa Recicla">
   
     
 </div>

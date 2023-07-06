@@ -1,6 +1,10 @@
 
-{% extends "base.html" %} {% block titulo %} Inicio {% endblock %} {% block body %}
+{% extends 'base.html' %}
 {% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block body %}
 
     <section>
       <div class="fondo">
@@ -33,7 +37,10 @@
    <h1>¡Contactanos aqui!</h1>
   </div>
    <div>
-   <button class="btn">Contactar</button>
+    <button class="btn" onclick="window.location.href='contacto.html'">Contactar</button>
+
+   
+   
   </div>
   <div class="div_p">
 
